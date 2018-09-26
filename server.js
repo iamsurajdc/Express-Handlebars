@@ -29,7 +29,7 @@ app.get('/about', (req, res) => {
     });
 });
 
-app.get('/', (req, res) => {
+app.get('/home', (req, res) => {
     res.render('home.hbs', {
         pageTitle: 'Home Page',
         welcomeMessage: 'Welcome to my Website"'
