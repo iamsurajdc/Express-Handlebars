@@ -52,5 +52,7 @@ app.get('/bad', (req, res) => {
         errorMessage: "Unable to Handle Request"
     })
 });
-console.log(`Starting server at ${port}`);
-app.listen(3000);
+
+app.listen(3000, () => {
+    console.log(`Starting server at ${port}`);
+});
